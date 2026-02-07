@@ -63,12 +63,14 @@ h1,
 h2 {
   color: rgb(0, 53, 80);
   margin: 20px;
+  text-align: justify;
 }
 
 p {
   color: rgb(0, 53, 80);
   margin: 0 20px 10px;
   font-size: 20px;
+  text-align: justify;
 }
 .vanessa {
   display: flex;
