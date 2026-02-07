@@ -1,4 +1,4 @@
-
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
   font-family: Sansation, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 80px; /* espaço pro menu fixo */
+  padding-top: 80px;
 }
 
 .menu {
@@ -17,11 +17,10 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;        /* quebra em mais linhas no mobile */
+  flex-wrap: wrap;
   background: rgb(0, 53, 80);
   padding: 10px 20px;
   font-weight: bold;
@@ -39,19 +38,11 @@ body {
 
 .itens a:hover {
   color: rgb(229, 255, 0);
-  transform: scale(1.20);
+  transform: scale(1.2);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
   border-radius: 3px;
 }
-.bem-vindo {
-  height: 70vh;
-  width: 100%;
-  background-image: url(./Imagens/classificados.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 #titulo a {
   display: block;
   text-align: left;
@@ -79,6 +70,7 @@ span {
   color: rgb(0, 53, 80);
   font-weight: bold;
 }
+
 span::before {
   content: "";
 }
@@ -91,32 +83,27 @@ span::before {
   background-color: rgb(0, 53, 80);
   padding-top: 45px;
   font-size: 50px;
-}   
+}
+
 h1,
 h2 {
   color: rgb(0, 53, 80);
   margin: 20px;
 }
 
-p {
-  color: rgb(0, 53, 80);
-  margin: 0 20px 10px;
-  font-size: 20px;
-}
-.vendas {
-  color: rgb(0, 53, 80);
-  margin: 0 20px 10px;
-  font-size: 20px;
-}
+p,
+.vendas,
 .vagas {
   color: rgb(0, 53, 80);
   margin: 0 20px 10px;
   font-size: 20px;
 }
+
 .alert {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .classificados {
   height: 70vh;
   width: 100%;
@@ -125,6 +112,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .footer {
   text-align: center;
   color: white;
@@ -151,3 +139,89 @@ footer p {
   margin: 0;
   color: white;
 }
+
+@media (max-width: 1024px) {
+  #principal {
+    font-size: 40px;
+  }
+
+  .bem-vindo,
+  .classificados {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .itens a {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  #principal {
+    font-size: 32px;
+    padding-top: 30px;
+  }
+
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+
+  p,
+  .vendas,
+  .vagas,
+  .texto {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .classificados {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 140px;
+  }
+
+  #titulo a {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  #principal {
+    font-size: 26px;
+  }
+
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  .vendas,
+  .vagas,
+  .texto {
+    font-size: 16px;
+    margin: 0 10px 10px;
+  }
+
+  .footer img {
+    width: 28px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
