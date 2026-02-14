@@ -109,14 +109,12 @@ span::before {
 
 .comercio {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 15px;
+  justify-content: center;   
+  align-items: center;       
+  margin: 50px auto;         
   padding: 15px;
-  flex: 1;
-  margin-top: 50px;
-  margin-left: 400px;
 }
+
 .api {
   display: flex;
   gap: 20px;
@@ -268,3 +266,4 @@ footer p {
     padding: 15px 5px 30px;
   }
 }
+
