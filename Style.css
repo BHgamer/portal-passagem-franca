@@ -44,13 +44,6 @@ body {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
   border-radius: 3px;
 }
-.bem-vindo {
-  height: 70vh;
-  width: 100%;
-  background-image: url("./Imagens/4996b009-438a-4502-8a4c-86c1f634ff37.jpeg;");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 #titulo a {
   display: block;
   text-align: left;
@@ -275,4 +268,3 @@ footer p {
     padding: 15px 5px 30px;
   }
 }
-
