@@ -47,11 +47,9 @@ body {
 .bem-vindo {
   height: 70vh;
   width: 100%;
-  background-image: url("./Imagens/Captura de tela de 2025-10-18 08-35-33.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url("./Imagens/4996b009-438a-4502-8a4c-86c1f634ff37.jpeg;");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #titulo a {
   display: block;
@@ -99,7 +97,6 @@ span::before {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;       
-  gap: 20px;
   margin-top: 0;
   background: rgb(0, 53, 80);
   padding: 20px 10px 40px;
@@ -107,13 +104,13 @@ span::before {
 
 .cards img {
   width: 100%;
-  max-width: 400px;
+  max-width: 1024px;
   height: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
   border-radius: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: 15px;
   margin-right: 0;
 }
 
@@ -123,9 +120,9 @@ span::before {
   justify-content: space-between;
   margin: 15px;
   padding: 15px;
-  gap: 30px;
   flex: 1;
   margin-top: 50px;
+  margin-left: 400px;
 }
 .api {
   display: flex;
@@ -278,3 +275,4 @@ footer p {
     padding: 15px 5px 30px;
   }
 }
+
